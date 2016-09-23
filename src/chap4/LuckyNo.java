@@ -13,6 +13,7 @@ class LuckyNo2{
 		int offset=randomKun.nextInt(11)-5;
 
 		System.out.println("その値の+-5の乱数を生成しました。それは"+x+"です。");
+		System.out.println("その値の+-5の乱数を生成しました。それは"+x+x+"です。");
 		System.out.println("その値の+-5の乱数を生成しました。それは"+(x + offset)+"です。");
 
 	}
