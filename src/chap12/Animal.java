@@ -1,8 +1,13 @@
 package chap12;
 
 public class Animal {
-//	public String say(){
-//		System.out.println("say,say,say");
-//	};
+	protected int age;
 
+	Animal(int age) {
+		this.age = age;
+	}
+
+	int getAge() {
+		return age;
+	}
 }
