@@ -1,5 +1,7 @@
 package chap12;
 
+import lesson0926.Pet;
+
 class Pet {
 	private String name;
 	private String masterName;

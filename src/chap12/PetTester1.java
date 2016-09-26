@@ -1,5 +1,7 @@
 package chap12;
 
+import lesson0926.Pet;
+
 public class PetTester1 {
 
 	public static void main(String[] args) {

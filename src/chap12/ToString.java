@@ -1,30 +1,33 @@
 package chap12;
 
-class X{
+class Teacher {
 	public String toString(){
-		return "Class X";
+		return "Class Teacher";
+	}
+	public void printX(){
+		System.out.println("  --My name is Class "+this.getClass().getName());
 	}
 }
 
-class Y extends X{
+class GreatTeacher extends Teacher {
 	public String toString(){
-		return "Class Y";
+		return "Class GreatTeacher";
 	}
 }
 
 public class ToString {
-
-	static void print(Object obj){
+	static void print(Object obj) {
 		System.out.println(obj);
+		Teacher objX = (Teacher) obj;
+		objX.printX();
 	}
+	public static void main(String[] args) {
+		Teacher natsume = new Teacher();
+		GreatTeacher chida = new GreatTeacher();
+		int[] c = new int[5];
 
-public static void main(String[] args) {
-		X x = new X();
-		Y y = new Y();
-		int[] c=new int[5];
-
-		print(x);
-		print(y);
+		print(natsume);
+		print(chida);
 		print(c);
 	}
 }
